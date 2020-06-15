@@ -4,4 +4,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def login(request):
-    return HttpResponse('<h1> This is login page </h1>')
+    return render(request,'adminInv/login.html')
+def register(request):
+    return render(request,'adminInv/register.html')
