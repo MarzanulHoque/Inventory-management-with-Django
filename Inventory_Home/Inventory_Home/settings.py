@@ -25,7 +25,7 @@ SECRET_KEY = '#_ea3#1qt-mercdoev&06ji^4r-vsk8smi95^9%^wnw=b%3lc_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'adminInv.apps.AdmininvConfig',
 ]
 
 MIDDLEWARE = [
