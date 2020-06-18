@@ -25,7 +25,7 @@ SECRET_KEY = '#_ea3#1qt-mercdoev&06ji^4r-vsk8smi95^9%^wnw=b%3lc_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -77,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'inventory2020',
-        'USER':'swazan',
-        'PASSWORD' : '1q2w3e4r',
+        'USER':'shaykh',
+        'PASSWORD' : '123456',
         'HOST':'localhost',
         'PORT':'3306',
     }
