@@ -3,6 +3,7 @@ Inventory management with Django
 
 ## Environment setup:
 ```Bash
+$ sudo apt-get install python3
 $ sudo apt install mysql-server
 ```
 ##Virtual Environment Setup
