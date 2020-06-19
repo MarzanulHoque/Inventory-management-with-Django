@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- dev1Shaykh
 
 pool:
   vmImage: 'ubuntu-latest'
