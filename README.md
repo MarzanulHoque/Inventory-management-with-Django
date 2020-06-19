@@ -13,13 +13,13 @@ $ source env/bin/activate
 ```
 ## Install Django 
 ```Bash
-$ pip install django
+$ pip3 install django
 ```
 ## For mysql database
 ```Bash
 $ sudo apt install python3-dev
 $ sudo apt install python3-dev libmysqlclient-dev default-libmysqlclient-dev
-$ pip install mysqlclient
+$ pip3 install mysqlclient
 ```
 ## For migrate
 ```Bash
