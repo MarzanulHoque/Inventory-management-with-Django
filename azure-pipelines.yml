@@ -10,16 +10,16 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python3Set:
-      PYTHON_VERSION: '3.7'
+    Python3:
+      PYTHON_VERSION: '3'
   maxParallel: 3
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(PYTHON_VERSION)'
+    versionSpec: '3.x'
+    addToPath: true
     architecture: 'x64'
-
 - task: PythonScript@0
   displayName: 'Export project path'
   inputs:
@@ -28,7 +28,7 @@ steps:
       """Search all subdirectories for `manage.py`."""
       from glob import iglob
       from os import path
-      Python >= 3.5
+      # Python >= 3.5
       manage_py = next(iglob(path.join('**', 'manage.py'), recursive=True), None)
       if not manage_py:
           raise SystemExit('Could not find a Django project')
