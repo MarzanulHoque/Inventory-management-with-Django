@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'inventory2020',
-        'USER':'swazan',
-        'PASSWORD' : '1q2w3e4r',
+        'USER':'shaykh',
+        'PASSWORD' : '123456',
         'HOST':'localhost',
         'PORT':'3306',
     }
