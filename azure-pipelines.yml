@@ -11,7 +11,7 @@ pool:
 strategy:
   matrix:
     Python3Set:
-      PYTHON_VERSION: '3'
+      PYTHON_VERSION: '3.5'
   maxParallel: 3
 
 steps:
