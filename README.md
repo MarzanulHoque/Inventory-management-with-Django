@@ -23,9 +23,9 @@ $ pip install mysqlclient
 ```
 ## For migrate
 ```Bash
-$ python manage.py migrate
+$ python3 manage.py migrate
 ```
 ## Run
 ```Bash
-$ python manage.py runserver 0.0.0.0:8080
+$ python3 manage.py runserver 0.0.0.0:8080
 ```
