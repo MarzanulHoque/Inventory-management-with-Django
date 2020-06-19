@@ -10,8 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python3set:
-      PYTHON_VERSION: '3''
+    Python3Set:
+      PYTHON_VERSION: '3'
   maxParallel: 3
 
 steps:
