@@ -10,8 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python3:
-      PYTHON_VERSION: '3'
+    Python3-Testing:
+      PYTHON_VERSION: '3.5'
   maxParallel: 3
 
 steps:
@@ -49,6 +49,5 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: "**/TEST-*.xml"
     testRunTitle: 'Python $(PYTHON_VERSION)'
   condition: succeededOrFailed()
