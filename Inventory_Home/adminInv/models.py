@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 class User(models.Model):
-    uid = models.CharField(max_length=10)
+    username = models.CharField(max_length=30, unique='True')
     sesskey = models.CharField(max_length=50)
     fullName = models.CharField(max_length=50)
     role = models.CharField(max_length=30)
